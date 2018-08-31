@@ -1,0 +1,35 @@
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+}
+
+h1{
+  margin-bottom: 30px;
+}
+
+.menu{
+  text-align: center;
+  ul{
+    li{
+      display: inline-block;
+      margin: 15px;
+    }
+  }
+}
+
+.container{
+  text-align: center;
+}
+
+.imageDescription{
+  display: inline-block;
+}
+
+.img{
+  margin-bottom: 20px;
+}
