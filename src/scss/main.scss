@@ -10,6 +10,7 @@ body{
 
 h1{
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .menu{
@@ -24,6 +25,7 @@ h1{
 
 .container{
   text-align: center;
+  border: 1px solid black;
 }
 
 .imageDescription{
@@ -38,4 +40,8 @@ h1{
   p{
     margin-top: 20%;
   }
+}
+
+.map{
+  margin-bottom: 30px;
 }
