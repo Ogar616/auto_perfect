@@ -30,4 +30,8 @@ h1 {
   margin-top: 20%; }
 
 .map {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  width: 100%; }
+
+.street {
+  width: 100%; }

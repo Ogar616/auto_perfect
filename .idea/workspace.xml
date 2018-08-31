@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bd6349c-16e4-44b6-8e70-931b2c886a02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -99,6 +97,7 @@
           <entry key="html" value="2" />
           <entry key="js" value="3" />
           <entry key="jsx" value="1" />
+          <entry key="md" value="1" />
           <entry key="scss" value="2" />
         </counts>
       </usages-collector>
@@ -108,21 +107,22 @@
           <entry key="HTML" value="2" />
           <entry key="JSX Harmony" value="1" />
           <entry key="JavaScript" value="3" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="157" />
+          <entry key="html" value="172" />
           <entry key="js" value="78" />
-          <entry key="scss" value="221" />
+          <entry key="scss" value="231" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="157" />
+          <entry key="HTML" value="172" />
           <entry key="JavaScript" value="78" />
-          <entry key="SCSS" value="221" />
+          <entry key="SCSS" value="231" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -172,7 +172,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="215">
@@ -184,11 +184,16 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+            <state relative-caret-position="591">
+              <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -227,6 +232,7 @@
         <option value="$PROJECT_DIR$/../index.html" />
         <option value="$PROJECT_DIR$/src/scss/main.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -323,12 +329,12 @@
       <workItem from="1535473172497" duration="7012000" />
       <workItem from="1535484501201" duration="662000" />
       <workItem from="1535647910252" duration="12085000" />
-      <workItem from="1535734413705" duration="797000" />
+      <workItem from="1535734413705" duration="1371000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32691000" />
+    <option name="totallyTimeSpent" value="33265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="590" width="1853" height="1055" extended-state="6" />
@@ -373,8 +379,8 @@
     <entry file="file://$PROJECT_DIR$/../index.html" />
     <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        <state relative-caret-position="591">
+          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -387,6 +393,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
