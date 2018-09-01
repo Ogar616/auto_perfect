@@ -11,17 +11,17 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 .sidebar {
-  padding: 2vh;
   width: 250px;
   height: 450px;
   border-radius: 25px;
-  background-color: rgba(255, 255, 242, 0.3);
+  box-shadow: 5px 5px 0px gray;
+  background: rgba(17, 17, 17, 0.4);
   float: left;
   position: fixed;
   left: 20vh;
-  top: 25vh;
+  top: 28vh;
   text-align: center;
-  padding: 5vh; }
+  padding: 3vh; }
   .sidebar p {
     font-size: 2vh; }
 
@@ -84,12 +84,11 @@ h1 {
   background: rgba(17, 17, 17, 0.4);
   border-radius: 55px;
   padding: 10px;
-  box-shadow: 5px 5px 0px gray;
-  margin-top: 4vh; }
+  box-shadow: 5px 5px 0 gray;
+  margin: 4vh 1vh; }
 
 .map {
-  margin-bottom: 2vh;
-  margin-top: 2vh;
+  margin: 2vh 2vh;
   width: 100%; }
 
 .street {
