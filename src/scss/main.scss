@@ -1,3 +1,5 @@
+@import "gallery";
+
 *{
   box-sizing: border-box;
   margin: 0 auto;
@@ -132,4 +134,5 @@ h1{
 }
 iframe{
   height: 30vh;
+  border: 0;
 }
