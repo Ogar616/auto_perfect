@@ -1,28 +1,43 @@
 * {
   box-sizing: border-box;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 100%; }
 
 body {
   display: block;
   font-weight: bolder;
   font-size: 25px;
   background-size: contain;
-  font-family: 'Roboto', sans-serif;
-  max-width: 2100px; }
+  font-family: 'Roboto', sans-serif; }
 
-.nav {
-  margin-bottom: 40px;
+.sidebar {
+  padding: 2vh;
+  width: 250px;
+  height: 450px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 242, 0.3);
+  float: left;
+  position: fixed;
+  left: 20vh;
+  top: 25vh;
+  text-align: center;
+  padding: 5vh; }
+  .sidebar p {
+    font-size: 2vh; }
+
+#nav {
+  margin-bottom: 4vh;
   background: rgba(17, 17, 17, 0.4);
-  padding: 20px 0;
+  padding: 1vh 0;
   box-shadow: 5px 5px 0px gray;
   border-radius: 25px;
   margin-top: 10px; }
-  .nav ul {
+  #nav ul {
     list-style: none;
     text-align: center; }
-    .nav ul li {
+    #nav ul li {
       display: inline-block; }
-      .nav ul li a {
+      #nav ul li a {
         display: block;
         padding: 15px;
         text-decoration: none;
@@ -32,7 +47,7 @@ body {
         margin: 0 10px;
         transition: all .5s;
         position: relative; }
-        .nav ul li a:after {
+        #nav ul li a:after {
           transition: all .5s;
           position: absolute;
           bottom: 0;
@@ -44,36 +59,37 @@ body {
           color: transparent;
           background: #aaa;
           height: 1px; }
-        .nav ul li a:before {
+        #nav ul li a:before {
           transition: all .5s; }
-        .nav ul li a:hover {
+        #nav ul li a:hover {
           color: whitesmoke;
           width: 100%; }
-          .nav ul li a:hover:after {
+          #nav ul li a:hover:after {
             width: 100%; }
 
 .container {
   text-align: center; }
 
 .imageDescription {
-  display: inline-block; }
+  font-size: 2vh; }
 
 img {
-  margin-bottom: 20px;
-  border-radius: 20px; }
+  margin-bottom: 2vh;
+  border-radius: 2vh; }
 
-.services p {
-  margin-top: 20%; }
+p {
+  margin-top: 15%; }
 
 h1 {
   background: rgba(17, 17, 17, 0.4);
   border-radius: 55px;
   padding: 10px;
   box-shadow: 5px 5px 0px gray;
-  margin-top: 40px; }
+  margin-top: 4vh; }
 
 .map {
-  margin-bottom: 30px;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
   width: 100%; }
 
 .street {

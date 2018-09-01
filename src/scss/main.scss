@@ -1,9 +1,8 @@
 
-
 *{
   box-sizing: border-box;
   margin: 0 auto;
-
+  max-width: 100%;
 }
 
 body{
@@ -14,15 +13,31 @@ body{
 
   background-size: contain;
   font-family: 'Roboto', sans-serif;
-  max-width: 2100px;
+}
+
+.sidebar{
+  padding: 2vh;
+  width: 250px;
+  height: 450px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 242, 0.3);
+  float: left;
+  position: fixed;
+  left: 20vh;
+  top: 25vh;
+  text-align: center;
+  padding: 5vh;
+  p{
+    font-size: 2vh;
+  }
+
 
 }
 
-
-.nav {
-  margin-bottom: 40px;
+#nav {
+  margin-bottom: 4vh;
   background: rgba(17, 17, 17, 0.4);
-  padding: 20px 0;
+  padding: 1vh 0;
   box-shadow: 5px 5px 0px gray;
   border-radius: 25px;
   margin-top: 10px;
@@ -70,75 +85,35 @@ body{
   }
 }
 
-//.nav {
-//  margin-top: 40px;
-//  padding: 24px;
-//  text-align: center;
-//  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-//  background: #3fa46a;
-//  border-radius: 25px;
-//  li{
-//    display: inline-block;
-//  }
-//  a{
-//    transition: 0.3s ease;
-//    background: #3fa46a;
-//    color: #ffffff;
-//    font-size: 20px;
-//    text-decoration: none;
-//    border-top: 4px solid #3fa46a;
-//    border-bottom: 4px solid #3fa46a;
-//    padding: 20px 0;
-//    margin: 0 20px;
-//    &:hover{
-//      border-top: 4px solid #ffffff;
-//      border-bottom: 4px solid #ffffff;
-//      padding: 6px 0;
-//    }
-//  }
-//}
-//
-
-
-//.nav{
-//  text-align: center;
-//  ul{
-//    li{
-//      display: inline-block;
-//      margin: 15px;
-//      font-size: 30px;
-//    }
-//  }
-//}
-
 .container{
   text-align: center;
 }
 
 .imageDescription{
-  display: inline-block;
+  font-size: 2vh;
 }
 
 img{
-  margin-bottom: 20px;
-  border-radius: 20px;
+  margin-bottom: 2vh;
+  border-radius: 2vh;
 }
 
-.services{
-  p{
-    margin-top: 20%;
-  }
+
+p{
+  margin-top: 15%;
 }
+
 h1{
   background: rgba(17, 17, 17, 0.4);
   border-radius: 55px;
   padding: 10px;
   box-shadow: 5px 5px 0px gray;
-  margin-top: 40px;
+  margin-top: 4vh;
 }
 
 .map{
-  margin-bottom: 30px;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
   width: 100%;
 }
 
