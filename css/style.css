@@ -3,16 +3,18 @@
   margin: 0 auto;
   max-width: 100%; }
 
+@media (max-width: 1920px) {
+  .sidebar {
+    display: none; }
+  #nav li {
+    font-size: 2vh; } }
+
 body {
   display: block;
   font-weight: bolder;
   font-size: 25px;
   background-size: contain;
   font-family: 'Roboto', sans-serif; }
-
-@media (max-width: 768px) {
-  .sidebar {
-    display: none; } }
 
 .sidebar {
   width: 250px;
@@ -34,7 +36,6 @@ body {
   background: rgba(17, 17, 17, 0.4);
   padding: 1vh 0;
   box-shadow: 5px 5px 0px gray;
-  border-radius: 25px;
   margin-top: 10px; }
   #nav ul {
     list-style: none;
@@ -92,8 +93,10 @@ h1 {
   margin: 4vh 1vh; }
 
 .map {
-  margin: 2vh 2vh;
   width: 100%; }
 
 .street {
   width: 100%; }
+
+iframe {
+  height: 30vh; }
