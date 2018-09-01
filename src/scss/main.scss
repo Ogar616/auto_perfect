@@ -1,45 +1,140 @@
+
+
 *{
   box-sizing: border-box;
   margin: 0 auto;
+
 }
 
 body{
-  height: 100%;
-  width: 100%;
+  display: block;
+  font-weight: bolder;
+  font-size: 25px;
+  //background-image: url("/img/background.jpg");
+
+  background-size: contain;
+  font-family: 'Roboto', sans-serif;
+  max-width: 2100px;
+
 }
 
-h1{
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
 
-.menu{
-  text-align: center;
+.nav {
+  margin-bottom: 40px;
+  background: rgba(17, 17, 17, 0.4);
+  padding: 20px 0;
+  box-shadow: 5px 5px 0px gray;
+  border-radius: 25px;
+  margin-top: 10px;
   ul{
+    list-style: none;
+    text-align: center;
     li{
       display: inline-block;
-      margin: 15px;
+      a{
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0 10px;
+        transition: all .5s;
+        position: relative;
+        &:after{
+          transition: all .5s;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0%;
+          content: '.';
+          color: transparent;
+          background: #aaa;
+          height: 1px;
+
+        }
+        &:before{
+          transition: all .5s;
+        }
+        &:hover{
+          color: whitesmoke;
+          width: 100%;
+          &:after{
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
 
+//.nav {
+//  margin-top: 40px;
+//  padding: 24px;
+//  text-align: center;
+//  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+//  background: #3fa46a;
+//  border-radius: 25px;
+//  li{
+//    display: inline-block;
+//  }
+//  a{
+//    transition: 0.3s ease;
+//    background: #3fa46a;
+//    color: #ffffff;
+//    font-size: 20px;
+//    text-decoration: none;
+//    border-top: 4px solid #3fa46a;
+//    border-bottom: 4px solid #3fa46a;
+//    padding: 20px 0;
+//    margin: 0 20px;
+//    &:hover{
+//      border-top: 4px solid #ffffff;
+//      border-bottom: 4px solid #ffffff;
+//      padding: 6px 0;
+//    }
+//  }
+//}
+//
+
+
+//.nav{
+//  text-align: center;
+//  ul{
+//    li{
+//      display: inline-block;
+//      margin: 15px;
+//      font-size: 30px;
+//    }
+//  }
+//}
+
 .container{
   text-align: center;
-  border: 1px solid black;
 }
 
 .imageDescription{
   display: inline-block;
 }
 
-.img{
+img{
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 .services{
   p{
     margin-top: 20%;
   }
+}
+h1{
+  background: rgba(17, 17, 17, 0.4);
+  border-radius: 55px;
+  padding: 10px;
+  box-shadow: 5px 5px 0px gray;
+  margin-top: 40px;
 }
 
 .map{
