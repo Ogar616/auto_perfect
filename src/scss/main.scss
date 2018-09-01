@@ -14,7 +14,7 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-@media (width < 768px ){
+@media (max-width: 768px ){
   .sidebar{
     display: none;
   }

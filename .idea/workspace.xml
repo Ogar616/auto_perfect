@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bd6349c-16e4-44b6-8e70-931b2c886a02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/out.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/out.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -119,7 +116,7 @@
           <entry key="html" value="538" />
           <entry key="js" value="480" />
           <entry key="jsx" value="204" />
-          <entry key="scss" value="1014" />
+          <entry key="scss" value="1019" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -127,7 +124,7 @@
           <entry key="HTML" value="538" />
           <entry key="JSX Harmony" value="204" />
           <entry key="JavaScript" value="480" />
-          <entry key="SCSS" value="1014" />
+          <entry key="SCSS" value="1019" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -195,7 +192,7 @@
         <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -349,12 +346,12 @@
       <workItem from="1535473172497" duration="7012000" />
       <workItem from="1535484501201" duration="662000" />
       <workItem from="1535647910252" duration="12085000" />
-      <workItem from="1535734413705" duration="18821000" />
+      <workItem from="1535734413705" duration="19138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50715000" />
+    <option name="totallyTimeSpent" value="51032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="590" width="1853" height="1055" extended-state="6" />
@@ -425,7 +422,7 @@
     <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
