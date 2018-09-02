@@ -22,21 +22,25 @@
   }
 }
 
-@media (min-width: 901px){
-  .nav{
+@media (max-width: 899px){
+  #nav{
     display: none;
+  }
+  #about{
+    margin-top: 150px;
   }
 }
 
 @media (min-width: 900px){
-  #nav-smartphone{
+  #nav-mobile{
     display: none;
   }
 }
 
-#nav-smartphone{
-  position: absolute;
-}
+  #nav-mobile{
+    position: absolute;
+  }
+
 
 body{
   font-weight: bolder;

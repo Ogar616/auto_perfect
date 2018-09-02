@@ -25,11 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }, false);
 
-    // $('#toggle').click(function() {
-    //     $(this).toggleClass('active');
-    //     $('#overlay').toggleClass('open');
-    // });
-
     //scrolling page to sections
     const anchors = document.querySelectorAll("a");
 

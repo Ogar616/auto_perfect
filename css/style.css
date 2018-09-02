@@ -43,29 +43,43 @@
 body {
   background: #F5F5F5; }
 
-p {
-  font-size: 20px; }
+.container-mobile {
+  position: absolute;
+  width: 100%;
+  heigh: 100%;
+  text-align: center;
+  top: 40%;
+  left: 0;
+  margin: 0 auto;
+  font-family: 'Varela Round', sans-serif; }
+  .container-mobile p {
+    font-size: 20px; }
+  .container-mobile a {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #1abc9c;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    top: 5px; }
+    .container-mobile a:after {
+      content: '';
+      position: absolute;
+      background: #1abc9c;
+      height: 2px;
+      width: 0%;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: 0;
+      transition: .35s ease; }
+    .container-mobile a:hover:after, .container-mobile a:focus:after, .container-mobile a:active:after {
+      width: 100%; }
 
-a {
-  display: inline-block;
+h1 {
   position: relative;
   text-align: center;
-  color: #1abc9c;
-  text-decoration: none;
-  overflow: hidden;
-  top: 5px; }
-  a:after {
-    content: '';
-    position: absolute;
-    background: #1abc9c;
-    height: 2px;
-    width: 0%;
-    transform: translateX(-50%);
-    left: 50%;
-    bottom: 0;
-    transition: .35s ease; }
-  a:hover:after, a:focus:after, a:active:after {
-    width: 100%; }
+  font-family: 'Varela Round', serif; }
 
 .button_container {
   position: fixed;
@@ -112,12 +126,14 @@ a {
   opacity: 0;
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 3; }
   .overlay.open {
     opacity: .9;
     visibility: visible;
     height: 100%; }
     .overlay.open li {
+      display: block;
       animation: fadeInRight .5s ease forwards;
       animation-delay: .35s; }
       .overlay.open li:nth-of-type(2) {
@@ -414,15 +430,17 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   #nav li {
     font-size: 2vh; } }
 
-@media (min-width: 901px) {
-  .nav {
-    display: none; } }
+@media (max-width: 899px) {
+  #nav {
+    display: none; }
+  #about {
+    margin-top: 150px; } }
 
 @media (min-width: 900px) {
-  #nav-smartphone {
+  #nav-mobile {
     display: none; } }
 
-#nav-smartphone {
+#nav-mobile {
   position: absolute; }
 
 body {

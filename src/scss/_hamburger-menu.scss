@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-
 $color-background: #F5F5F5;
 $color-main: #1abc9c;
 $color-active: #FFF;
@@ -12,6 +11,17 @@ $button-width: 35px;
 body {
   background: $color-background;
 }
+
+.container-mobile {
+  position: absolute;
+  width: 100%;
+  heigh: 100%;
+  text-align: center;
+  top: 40%;
+  left: 0;
+  margin:  0 auto;
+  font-family: 'Varela Round', sans-serif;
+
   p {
     font-size: 20px;
   }
@@ -22,7 +32,7 @@ body {
     text-align: center;
     color: $color-main;
     text-decoration: none;
-    //font-size: 20px;
+    font-size: 20px;
     overflow: hidden;
     top: 5px;
 
@@ -43,6 +53,13 @@ body {
       width: 100%;
     }
   }
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  font-family: 'Varela Round', serif;
+}
 
 .button_container {
   position: fixed;
@@ -106,6 +123,7 @@ body {
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
   overflow: hidden;
+  z-index: 3;
 
   &.open {
     opacity: .9;
@@ -113,6 +131,7 @@ body {
     height: 100%;
 
     li {
+      display: block;
       animation: fadeInRight .5s ease forwards;
       animation-delay: .35s;
 
