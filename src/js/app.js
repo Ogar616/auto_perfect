@@ -9,11 +9,20 @@ const scrollTo = (element) => {
     });
 };
 
+const toggleNav = document.getElementById("toggle");
+
 document.addEventListener("DOMContentLoaded", () => {
 
-    document.getElementById("toggle").addEventListener("touchend", () => {
-       document.getElementById("toggle").classList.add("active");
-       document.getElementById("overlay").classList.add("open");
+    toggleNav.addEventListener("click", () => {
+        if (toggleNav.classList.length === 1){
+            document.getElementById("toggle").classList.add("active");
+            document.getElementById("overlay").classList.add("open");
+        }else{
+            document.getElementById("toggle").classList.remove("active");
+            document.getElementById("overlay").classList.remove("open");
+            console.log("dfdfdfdfdfdfdf")
+        }
+
     }, false);
 
     // $('#toggle').click(function() {

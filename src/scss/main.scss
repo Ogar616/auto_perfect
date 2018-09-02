@@ -27,12 +27,12 @@
     display: none;
   }
 }
-//
-//@media (min-width: 900px){
-//  #nav-smartphone{
-//    display: none;
-//  }
-//}
+
+@media (min-width: 900px){
+  #nav-smartphone{
+    display: none;
+  }
+}
 
 #nav-smartphone{
   position: absolute;

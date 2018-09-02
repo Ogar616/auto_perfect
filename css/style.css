@@ -418,6 +418,10 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   .nav {
     display: none; } }
 
+@media (min-width: 900px) {
+  #nav-smartphone {
+    display: none; } }
+
 #nav-smartphone {
   position: absolute; }
 
