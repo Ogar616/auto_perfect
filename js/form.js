@@ -33,7 +33,7 @@ $(function()
                 }
             });
             
-        }//else
+        }//else   auto.perfect@o2.pl
     }
 
 	$('#reused_form').submit(function(e)
@@ -47,7 +47,7 @@ $(function()
             $btn = $(this);
             $btn.prop('type','button' ); 
             $btn.prop('orig_label',$btn.text());
-            $btn.text('Sending ...');
+            $btn.text('Wysyłanie');
         });
         
 
