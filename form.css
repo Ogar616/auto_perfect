@@ -1,32 +1,17 @@
 
-.imagebg {
-	background-image: url("images/avenue-2215317_1920.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	-webkit-filter: blur(3px);
-  filter: blur(3px);
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-}
+
 .form-container {
 	width: 600px;
 	margin-left: auto;
 	margin-right: auto;
-	/*margin-top:90px;
-	margin-bottom: 30px;*/
+	margin-top:90px;
+	margin-bottom: 30px;
 	padding: 30px;
 	background-color: #fff;
-	position: relative;
-	    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 20px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+
 	position: absolute;
-	top: 50%;
+	    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 20px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+	top: 200%;
 	left: 50%;
 
 	-webkit-transform: translate(-50%, -50%);
@@ -35,7 +20,7 @@
 	transform: translate(-50%, -50%);
 }
 
-.form-container .row {
+.form-container .form-row {
 	margin-bottom: 0;
 }
 

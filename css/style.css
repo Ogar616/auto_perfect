@@ -208,4 +208,6 @@ iframe {
   border: 0; }
 
 #contact {
-  position: relative; }
+  position: relative;
+  display: block;
+  height: auto; }
