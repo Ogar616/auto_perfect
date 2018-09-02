@@ -11,10 +11,10 @@ const scrollTo = (element) => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    document.getElementById("toggle").addEventListener("ontouchstart", () => {
+    document.getElementById("toggle").addEventListener("touchend", () => {
        document.getElementById("toggle").classList.add("active");
        document.getElementById("overlay").classList.add("open");
-    });
+    }, false);
 
     // $('#toggle').click(function() {
     //     $(this).toggleClass('active');
