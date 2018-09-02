@@ -206,3 +206,6 @@ h2 {
 iframe {
   height: 30vh;
   border: 0; }
+
+#contact {
+  position: relative; }

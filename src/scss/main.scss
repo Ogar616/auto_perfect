@@ -3,6 +3,7 @@
 @import "gallery";
 
 
+
 *{
   box-sizing: border-box;
   margin: 0 auto;
@@ -74,5 +75,9 @@ h2{
 iframe{
   height: 30vh;
   border: 0;
+}
+
+#contact{
+  position: relative;
 }
 

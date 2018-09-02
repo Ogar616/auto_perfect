@@ -1,5 +1,6 @@
 import '../scss/main.scss';
 
+console.log("sds");
 const scrollTo = (element) => {
     window.scroll({
         behavior: 'smooth',
