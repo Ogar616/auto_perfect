@@ -22,6 +22,12 @@
   }
 }
 
+@media (min-width: 901px){
+  .nav{
+    display: none;
+  }
+}
+
 @media (min-width: 900px){
   #nav-smartphone{
     display: none;

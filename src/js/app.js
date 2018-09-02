@@ -11,15 +11,15 @@ const scrollTo = (element) => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // document.getElementById("toggle").addEventListener("click", () => {
-    //    this.classList.add("active");
-    //    document.getElementById("overlay").classList.add("open");
-    // });
-
-    $('#toggle').click(function() {
-        $(this).toggleClass('active');
-        $('#overlay').toggleClass('open');
+    document.getElementById("toggle").addEventListener("click", () => {
+       this.classList.add("active");
+       document.getElementById("overlay").classList.add("open");
     });
+
+    // $('#toggle').click(function() {
+    //     $(this).toggleClass('active');
+    //     $('#overlay').toggleClass('open');
+    // });
 
     //scrolling page to sections
     const anchors = document.querySelectorAll("a");
