@@ -11,7 +11,7 @@ const scrollTo = (element) => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    document.getElementById("toggle").addEventListener("touchstart", () => {
+    document.getElementById("toggle").addEventListener("ontouchstart", () => {
        document.getElementById("toggle").classList.add("active");
        document.getElementById("overlay").classList.add("open");
     });
