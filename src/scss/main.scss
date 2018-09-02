@@ -1,8 +1,7 @@
 @import "nav";
 @import "sidebar";
 @import "gallery";
-
-
+@import "form";
 
 *{
   box-sizing: border-box;
@@ -22,11 +21,8 @@
 }
 
 body{
-  display: block;
   font-weight: bolder;
   font-size: 25px;
-  //background-image: url("/img/background.jpg");
-
   background-size: contain;
   font-family: 'Roboto', sans-serif;
 }
@@ -35,6 +31,7 @@ body{
 
 .container{
   text-align: center;
+  margin-left: 10px;
 
 }
 

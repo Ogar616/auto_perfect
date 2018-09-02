@@ -42,13 +42,13 @@
 
 .sidebar {
   width: 250px;
-  height: 350px;
+  height: 340px;
   border-radius: 25px;
   box-shadow: 5px 5px 0px gray;
   background: rgba(17, 17, 17, 0.4);
   float: left;
   position: fixed;
-  left: 20vh;
+  left: 15vh;
   top: 28vh;
   text-align: center;
   padding: 3vh; }
@@ -155,6 +155,118 @@ input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
   background: rgba(0, 0, 0, 0.8); }
 
+.form-container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 20px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  top: 200%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.form-container .form-row {
+  margin-bottom: 0; }
+
+/* label color */
+.input-field label {
+  color: #9c9c9c; }
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #9c9c9c; }
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #9c9c9c;
+  box-shadow: 0 1px 0 0 #9c9c9c; }
+
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #9c9c9c;
+  box-shadow: 0 1px 0 0 #9c9c9c; }
+
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #9c9c9c;
+  box-shadow: 0 1px 0 0 #9c9c9c; }
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #9c9c9c; }
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #009ddc;
+  box-shadow: 0 1px 0 0 #009ddc; }
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #009ddc; }
+
+.form-container .btn {
+  background-color: #009ddc; }
+
+.submitbtn {
+  line-height: 48px;
+  display: block;
+  height: 48px;
+  width: 100%; }
+
+.form-container h3 {
+  font-size: 42px;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: -46px; }
+
+@media all and (max-width: 640px) {
+  .form-container {
+    position: static;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 20px; }
+  .form-container h3 {
+    font-size: 24px;
+    top: -26px; } }
+
 * {
   box-sizing: border-box;
   margin: 0 auto;
@@ -167,14 +279,14 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     font-size: 2vh; } }
 
 body {
-  display: block;
   font-weight: bolder;
   font-size: 25px;
   background-size: contain;
   font-family: 'Roboto', sans-serif; }
 
 .container {
-  text-align: center; }
+  text-align: center;
+  margin-left: 10px; }
 
 .imageDescription {
   font-size: 2vh; }
