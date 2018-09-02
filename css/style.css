@@ -1,5 +1,59 @@
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);html, body {
-  background: #333 url("https://codepen.io/images/classy_fabric.png"); }
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);#nav {
+  margin-bottom: 4vh;
+  background: rgba(17, 17, 17, 0.4);
+  padding: 1vh 0;
+  box-shadow: 5px 5px 0px gray;
+  margin-top: 10px; }
+  #nav ul {
+    list-style: none;
+    text-align: center; }
+    #nav ul li {
+      display: inline-block;
+      cursor: pointer; }
+      #nav ul li a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0 10px;
+        transition: all .5s;
+        position: relative; }
+        #nav ul li a:after {
+          transition: all .5s;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0%;
+          content: '.';
+          color: transparent;
+          background: #aaa;
+          height: 1px; }
+        #nav ul li a:before {
+          transition: all .5s; }
+        #nav ul li a:hover {
+          color: whitesmoke;
+          width: 100%; }
+          #nav ul li a:hover:after {
+            width: 100%; }
+
+.sidebar {
+  width: 250px;
+  height: 350px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 0px gray;
+  background: rgba(17, 17, 17, 0.4);
+  float: left;
+  position: fixed;
+  left: 20vh;
+  top: 28vh;
+  text-align: center;
+  padding: 3vh; }
+  .sidebar p {
+    font-size: 2vh; }
 
 .slides {
   padding: 0;
@@ -87,7 +141,7 @@ input:checked + .slide-container .nav label {
   position: relative;
   border-radius: 100%;
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.6); }
+  background-color: grey; }
 
 .nav-dots .nav-dot:hover {
   cursor: pointer;
@@ -119,62 +173,6 @@ body {
   background-size: contain;
   font-family: 'Roboto', sans-serif; }
 
-.sidebar {
-  width: 250px;
-  height: 450px;
-  border-radius: 25px;
-  box-shadow: 5px 5px 0px gray;
-  background: rgba(17, 17, 17, 0.4);
-  float: left;
-  position: fixed;
-  left: 20vh;
-  top: 28vh;
-  text-align: center;
-  padding: 3vh; }
-  .sidebar p {
-    font-size: 2vh; }
-
-#nav {
-  margin-bottom: 4vh;
-  background: rgba(17, 17, 17, 0.4);
-  padding: 1vh 0;
-  box-shadow: 5px 5px 0px gray;
-  margin-top: 10px; }
-  #nav ul {
-    list-style: none;
-    text-align: center; }
-    #nav ul li {
-      display: inline-block; }
-      #nav ul li a {
-        display: block;
-        padding: 15px;
-        text-decoration: none;
-        color: black;
-        font-weight: 800;
-        text-transform: uppercase;
-        margin: 0 10px;
-        transition: all .5s;
-        position: relative; }
-        #nav ul li a:after {
-          transition: all .5s;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          margin: auto;
-          width: 0%;
-          content: '.';
-          color: transparent;
-          background: #aaa;
-          height: 1px; }
-        #nav ul li a:before {
-          transition: all .5s; }
-        #nav ul li a:hover {
-          color: whitesmoke;
-          width: 100%; }
-          #nav ul li a:hover:after {
-            width: 100%; }
-
 .container {
   text-align: center; }
 
@@ -186,7 +184,7 @@ img {
   border-radius: 2vh; }
 
 p {
-  margin-top: 15%; }
+  margin-top: 5%; }
 
 h1 {
   background: rgba(17, 17, 17, 0.4);
@@ -194,6 +192,10 @@ h1 {
   padding: 10px;
   box-shadow: 5px 5px 0 gray;
   margin: 4vh 1vh; }
+
+h2 {
+  font-weight: bolder;
+  margin-top: 2vh; }
 
 .map {
   width: 100%; }
