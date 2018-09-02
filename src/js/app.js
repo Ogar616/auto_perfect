@@ -13,7 +13,7 @@ const toggleNav = document.getElementById("toggle");
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    toggleNav.addEventListener("click", () => {
+    toggleNav.addEventListener("touchend", () => {
         if (toggleNav.classList.length === 1){
             document.getElementById("toggle").classList.add("active");
             document.getElementById("overlay").classList.add("open");
