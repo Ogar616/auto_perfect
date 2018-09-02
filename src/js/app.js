@@ -12,7 +12,7 @@ const scrollTo = (element) => {
 document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("toggle").addEventListener("click", () => {
-       this.classList.add("active");
+       document.getElementById("toggle").classList.add("active");
        document.getElementById("overlay").classList.add("open");
     });
 
