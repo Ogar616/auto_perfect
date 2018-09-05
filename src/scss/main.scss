@@ -12,9 +12,7 @@
 }
 
 @media (max-width: 1920px ){
-  .sidebar{
-    display: none;
-  }
+
   #nav{
     li{
       font-size: 2vh;
@@ -34,12 +32,9 @@
 @media (min-width: 900px){
   #nav-mobile{
     display: none;
-  }
-}
-
-  #nav-mobile{
     position: absolute;
   }
+}
 
 
 body{

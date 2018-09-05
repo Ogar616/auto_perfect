@@ -1,17 +1,16 @@
 import '../scss/main.scss';
 
-console.log("sds");
-const scrollTo = (element) => {
-    window.scroll({
-        behavior: 'smooth',
-        left: 0,
-        top: element.offsetTop
-    });
-};
-
 const toggleNav = document.getElementById("toggle");
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    const scrollTo = (element) => {
+        window.scroll({
+            behavior: 'smooth',
+            left: 0,
+            top: element.offsetTop
+        });
+    };
 
     toggleNav.addEventListener("touchend", () => {
         if (toggleNav.classList.length === 1){
@@ -20,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }else{
             document.getElementById("toggle").classList.remove("active");
             document.getElementById("overlay").classList.remove("open");
-            console.log("dfdfdfdfdfdfdf")
         }
 
     }, false);

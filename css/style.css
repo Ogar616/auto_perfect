@@ -193,19 +193,23 @@ h1 {
     left: 0; } }
 
 .sidebar {
-  width: 250px;
-  height: 340px;
+  width: 12vw;
+  height: auto;
   border-radius: 25px;
   box-shadow: 5px 5px 0px gray;
   background: rgba(17, 17, 17, 0.4);
   float: left;
   position: fixed;
-  left: 15vh;
+  left: 1vw;
   top: 28vh;
   text-align: center;
   padding: 3vh; }
   .sidebar p {
     font-size: 2vh; }
+
+@media (max-width: 1200px) {
+  .sidebar {
+    display: none; } }
 
 .slides {
   padding: 0;
@@ -425,8 +429,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   max-width: 100%; }
 
 @media (max-width: 1920px) {
-  .sidebar {
-    display: none; }
   #nav li {
     font-size: 2vh; } }
 
@@ -438,10 +440,8 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 @media (min-width: 900px) {
   #nav-mobile {
-    display: none; } }
-
-#nav-mobile {
-  position: absolute; }
+    display: none;
+    position: absolute; } }
 
 body {
   font-weight: bolder;
