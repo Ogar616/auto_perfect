@@ -216,7 +216,6 @@ h1 {
   width: 609px;
   height: 420px;
   display: block;
-  margin: 0 auto;
   position: relative; }
 
 .slides * {
@@ -267,10 +266,10 @@ h1 {
 .slide:hover + .nav label {
   opacity: 0.5; }
 
-.nav label:hover {
+.nav label :hover {
   opacity: 1; }
 
-.nav .next {
+.nav label .next {
   right: 0; }
 
 input:checked + .slide-container .slide {
@@ -288,28 +287,25 @@ input:checked + .slide-container .nav label {
   display: block;
   position: absolute;
   text-align: center; }
-
-.nav-dots .nav-dot {
-  top: -5px;
-  width: 11px;
-  height: 11px;
-  margin: 0 4px;
-  position: relative;
-  border-radius: 100%;
-  display: inline-block;
-  background-color: grey; }
-
-.nav-dots .nav-dot:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.8); }
-
-input#img-1:checked ~ .nav-dots label#img-dot-1,
-input#img-2:checked ~ .nav-dots label#img-dot-2,
-input#img-3:checked ~ .nav-dots label#img-dot-3,
-input#img-4:checked ~ .nav-dots label#img-dot-4,
-input#img-5:checked ~ .nav-dots label#img-dot-5,
-input#img-6:checked ~ .nav-dots label#img-dot-6 {
-  background: rgba(0, 0, 0, 0.8); }
+  .nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: grey; }
+    .nav-dots .nav-dot:hover {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.8); }
+  .nav-dots input#img-1:checked ~ .nav-dots label#img-dot-1,
+  .nav-dots input#img-2:checked ~ .nav-dots label#img-dot-2,
+  .nav-dots input#img-3:checked ~ .nav-dots label#img-dot-3,
+  .nav-dots input#img-4:checked ~ .nav-dots label#img-dot-4,
+  .nav-dots input#img-5:checked ~ .nav-dots label#img-dot-5,
+  .nav-dots input#img-6:checked ~ .nav-dots label#img-dot-6 {
+    background: rgba(0, 0, 0, 0.8); }
 
 .form-row {
   background: rgba(245, 245, 245, 0.8);
@@ -453,8 +449,7 @@ h1 {
   background: rgba(17, 17, 17, 0.4);
   border-radius: 55px;
   padding: 10px;
-  box-shadow: 5px 5px 0 gray;
-  margin: 4vh 0 1vh 2vh; }
+  box-shadow: 5px 5px 0 gray; }
 
 h2 {
   font-weight: bolder;
