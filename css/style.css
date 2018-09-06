@@ -43,7 +43,7 @@
 mobile {
   border: 2px solid black;
   border-radius: 8px;
-  height: 480px;
+  height: auto;
   margin: 10vh auto;
   overflow: hidden;
   position: relative;
@@ -53,23 +53,23 @@ mobile {
   text-align: center;
   padding: 10px; }
   .mobile-controls button {
-    border: 1px solid #fff;
-    border-radius: 8px;
-    color: #fff;
+    border-radius: 10px;
+    color: black;
     height: 40px;
     padding: 0 15px; }
     .mobile-controls button:hover {
       cursor: pointer;
-      background: lightgrey;
-      color: #000; }
+      background: grey;
+      color: white; }
+    .mobile-controls button:focus {
+      background-color: #aaaaaa; }
   .mobile-controls .back-button {
     display: none; }
 
 .mobile-menu {
-  background: lightgray;
+  background: rgba(211, 211, 211, 0.7);
   display: none;
-  height: 100%;
-  left: 0;
+  height: 185px;
   position: absolute;
   width: 100%;
   z-index: 10; }
@@ -97,7 +97,6 @@ mobile {
       .mobile-menu ul li button {
         background: none;
         border: 0;
-        flex: 1;
         text-align: right;
         padding: 10px; }
 

@@ -1,8 +1,8 @@
 mobile {
   border: 2px solid black;
   border-radius: 8px;
-  height: 480px;
-  margin:10vh auto;
+  height: auto;
+  margin: 10vh auto;
   overflow: hidden;
   position: relative;
   width: 320px;
@@ -10,17 +10,19 @@ mobile {
 }
 .mobile-controls {
   text-align: center;
-  padding:10px;
+  padding: 10px;
   button{
-    border:1px solid #fff;
-    border-radius:8px;
-    color:#fff;
-    height:40px;
-    padding:0 15px;
+    border-radius: 10px;
+    color: black;
+    height: 40px;
+    padding :0 15px;
     &:hover{
-      cursor:pointer;
-      background:lightgrey;
-      color:#000;
+      cursor: pointer;
+      background: grey;
+      color: white;
+    }
+    &:focus{
+      background-color: #aaaaaa;
     }
   }
   .back-button {
@@ -29,10 +31,9 @@ mobile {
 }
 
 .mobile-menu {
-  background: lightgray;
+  background: rgba(211,211,211,0.7);
   display: none;
-  height: 100%;
-  left: 0;
+  height: 185px;
   position: absolute;
   width: 100%;
   z-index: 10;
@@ -64,7 +65,6 @@ mobile {
       button {
         background: none;
         border: 0;
-        flex: 1;
         text-align: right;
         padding: 10px;
       }
