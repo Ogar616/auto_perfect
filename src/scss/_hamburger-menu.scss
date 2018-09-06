@@ -1,213 +1,201 @@
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-$color-background: #F5F5F5;
-$color-main: #1abc9c;
-$color-active: #FFF;
-$color-link: #FFF;
-
-$button-height: 27px;
-$button-width: 35px;
-
-body {
-  background: $color-background;
+@mixin transition($duration, $timing-func) {
+  -webkit-transition: $duration $timing-func all;
+  -moz-transition: $duration $timing-func all;
+  transition: $duration $timing-func all;
 }
 
-.container-mobile {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  top: 40%;
-  left: 0;
-  margin:  0 auto;
-  font-family: 'Varela Round', sans-serif;
+@mixin scale($size) {
+  -webkit-transform: scale($size);
+  -moz-transform: scale($size);
+  transform: scale($size);
+}
 
-  p {
-    font-size: 20px;
-  }
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  transform: rotate($deg);
+}
 
-  a {
-    display: block !important;
-    position: relative;
-    text-align: center;
-    color: $color-main;
-    text-decoration: none;
-    font-size: 20px;
-    overflow: hidden;
-    top: 5px;
+$bg: rgb(40,110,250);
+$menu-bg: lightgrey;
+$menu-hover: rgba(40,110,250,0.25);
+$size: 5em;
+$time: 350ms;
+$degree: 135deg;
+$timing: ease;
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#toggle {
+  position: relative;
+  z-index: 3;
+  width: $size / 1.75;
+  height: $size / 1.75;
+  top: 0;
+  left: 45%;
+  margin: 15px 0 0 15px;
+  cursor: pointer;
+
+  span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: $size / 25;
+    margin: $size / 4 0 0 0;
+    background: #eee;
+    @include transition($time, $timing);
+
+    &:before,
+    &:after {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      height: $size / 25;
+      background: #eee;
+      @include transition($time, $timing);
+    }
+
+    &:before {
+      margin: -$size / 5 0 0 0;
+    }
 
     &:after {
-      content: '';
-      position: absolute;
-      background: $color-main;
-      height: 2px;
-      width: 0%;
-      transform: translateX(-50%);
-      left: 50%;
-      bottom: 0;
-      transition: .35s ease;
+      margin: $size / 5 0 0 0;
     }
-    &:hover:after,
-    &:focus:after,
-    &:active:after {
-      width: 100%;
+  }
+
+  &.open {
+    span {
+      background-color: transparent;
+
+      &:before,
+      &:after {
+        margin: 0;
+        background: $bg;
+      }
+
+      &:before {
+        @include rotate($degree);
+      }
+
+      &:after {
+        @include rotate(-$degree);
+      }
     }
   }
 }
 
-h1 {
-  position: relative;
-  text-align: center;
-  font-family: 'Varela Round', serif;
-}
-
-.button_container {
+#menu {
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
-  top: 5%;
-  right: 2%;
-  height: $button-height;
-  width: $button-width;
-  cursor: pointer;
-  z-index: 100;
-  transition: opacity .25s ease;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background: $menu-bg;
+  @include scale(1.5);
+  @include transition($time, $timing);
 
-  &:hover {
-    opacity: .7;
-  }
-
-  &.active {
-    .top {
-      transform: translateY(11px) translateX(0) rotate(45deg);
-      background: $color-active;
-    }
-    .middle {
-      opacity: 0;
-      background: $color-active;
-    }
-
-    .bottom {
-      transform: translateY(-11px) translateX(0) rotate(-45deg);
-      background: $color-active;
-    }
+  &.opened {
+    visibility: visible;
+    opacity: 1;
+    @include scale(1);
+    @include transition($time, $timing);
   }
 
   span {
-    background: $color-main;
-    border: none;
-    height: 5px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition:  all .35s ease;
-    cursor: pointer;
-
-    &:nth-of-type(2) {
-      top: 11px;
-    }
-
-    &:nth-of-type(3) {
-      top: 22px;
-    }
-  }
-}
-
-.overlay {
-  position: fixed;
-  background: $color-main;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .35s, visibility .35s, height .35s;
-  overflow: hidden;
-  z-index: 3;
-
-  &.open {
-    opacity: .9;
-    visibility: visible;
-    height: 100%;
-
-    li {
+    &#title {
       display: block;
-      animation: fadeInRight .5s ease forwards;
-      animation-delay: .35s;
-
-      &:nth-of-type(2) {
-        animation-delay: .4s;
-      }
-      &:nth-of-type(3) {
-        animation-delay: .45s;
-      }
-      &:nth-of-type(4) {
-        animation-delay: .50s;
-      }
+      line-height: $size / 5;
+      margin: 0 0 $size / 10 0;
+      font-size: $size;
+      color: $bg;
     }
   }
-  nav {
-    position: relative;
-    height: 70%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    font-family: 'Varela Round', serif;
-    font-weight: 400;
-    text-align: center;
-  }
+
   ul {
     list-style: none;
-    padding: 0;
     margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    height: 100%;
 
     li {
       display: block;
-      height: 25%;
-      height: calc(100% / 4);
-      min-height: 50px;
-      position: relative;
-      opacity: 0;
+      width: 90%;
+      height: 65px;
+      margin: 0 auto $size / 10 auto;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        width: 0%;
+        height: 65px;
+        margin: -65px 0 0 5%;
+        left: 0;
+        background: $bg;
+        border-radius: $size / 20;
+        @include transition($time, $timing);
+      }
+
+      &:hover {
+        &:after {
+          width: 90%;
+        }
+      }
 
       a {
-        display: block;
         position: relative;
-        color: $color-link;
+        z-index: 4;
+        display: block;
+        width: 100%;
+        height: 65px;
+        line-height: 65px;
+        margin: 0 auto;
+        color: $bg;
         text-decoration: none;
-        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: $size / 25;
+        @include transition($time, $timing);
 
-        &:hover:after,
-        &:focus:after,
-        &:active:after {
-          width: 100%;
+        &:hover {
+          color: #eee;
+          border-color: $bg;
         }
 
-        &:after {
-          content: '';
+        span {
+          font-size: $size / 3;
+        }
+
+        i {
           position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 0%;
-          transform: translateX(-50%);
-          height: 3px;
-          background: $color-link;
-          transition: .35s;
+          padding: 0 $size / 4 0 0;
+          font-size: $size / 2.5;
         }
       }
     }
   }
 }
 
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    left: 20%;
+  #logo {
+    display: block;
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+
+    span {
+      font-size: $size / 1.5;
+    }
   }
-  100% {
-    opacity: 1;
-    left: 0;
+
+  section {
+    font-size: $size / 4.5;
   }
-}
+

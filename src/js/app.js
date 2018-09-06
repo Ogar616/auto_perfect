@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }, false);
 
+    $("#toggle").click(() => {
+        $(this).toggleClass("open");
+        $("#toggle").css("z-index: 0");
+        $("#menu").toggleClass("opened");
+    });
+
     //scrolling page to sections
     const anchors = document.querySelectorAll("a");
 
