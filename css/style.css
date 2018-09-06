@@ -435,7 +435,8 @@ body {
 .container {
   text-align: center; }
   .container * {
-    padding-left: 20px; }
+    margin: 0 auto;
+    margin-top: 20px; }
 
 .imageDescription {
   font-size: 2vh; }
