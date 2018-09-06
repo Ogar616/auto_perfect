@@ -49,15 +49,15 @@ $(function()
             $btn.prop('orig_label',$btn.text());
             $btn.text('Wysyłanie');
         });
-        
 
-                    $.ajax({
-                type: "POST",
-                url: 'handler.php',
-                data: $form.serialize(),
-                success: after_form_submitted,
-                dataType: 'json' 
-            });        
+
+          $.ajax({
+              type: "POST",
+              url: 'handler.php',
+              data: $form.serialize(),
+              success: after_form_submitted,
+              dataType: 'json'
+          });
         
       });	
 });

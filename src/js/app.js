@@ -1,4 +1,3 @@
-import '../scss/main.scss';
 
 const toggleNav = document.getElementById("toggle");
 

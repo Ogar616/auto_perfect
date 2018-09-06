@@ -262,15 +262,14 @@ h1 {
   font-family: "Varela Round", sans-serif;
   background-color: rgba(255, 255, 255, 0.3);
   text-shadow: 0px 0px 15px #777777; }
+  .nav label:hover {
+    opacity: 1; }
+
+.nav .next {
+  right: 0; }
 
 .slide:hover + .nav label {
   opacity: 0.5; }
-
-.nav label :hover {
-  opacity: 1; }
-
-.nav label .next {
-  right: 0; }
 
 input:checked + .slide-container .slide {
   opacity: 1;
@@ -299,13 +298,14 @@ input:checked + .slide-container .nav label {
     .nav-dots .nav-dot:hover {
       cursor: pointer;
       background-color: rgba(0, 0, 0, 0.8); }
-  .nav-dots input#img-1:checked ~ .nav-dots label#img-dot-1,
-  .nav-dots input#img-2:checked ~ .nav-dots label#img-dot-2,
-  .nav-dots input#img-3:checked ~ .nav-dots label#img-dot-3,
-  .nav-dots input#img-4:checked ~ .nav-dots label#img-dot-4,
-  .nav-dots input#img-5:checked ~ .nav-dots label#img-dot-5,
-  .nav-dots input#img-6:checked ~ .nav-dots label#img-dot-6 {
-    background: rgba(0, 0, 0, 0.8); }
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+  background: rgba(0, 0, 0, 0.8); }
 
 .form-row {
   background: rgba(245, 245, 245, 0.8);
