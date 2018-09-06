@@ -41,101 +41,65 @@
             width: 100%; }
 
 mobile {
-  background: #fff;
   border: 2px solid black;
   border-radius: 8px;
   height: 480px;
   margin: 10vh auto;
   overflow: hidden;
-  /* NB: Remove this overflow property if you want to get a better idea of what is happening "under the hood" */
   position: relative;
   width: 320px; }
 
 .mobile-controls {
-  background: #000;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  text-align: center;
   padding: 10px; }
-
-.mobile-controls button {
-  background: none;
-  border: 1px solid #fff;
-  border-radius: 8px;
-  color: #fff;
-  height: 40px;
-  padding: 0 15px; }
-
-button:hover {
-  cursor: pointer; }
-
-.mobile-controls button:hover {
-  background: #fff;
-  color: #000; }
-
-.mobile-controls .back-button {
-  display: none; }
+  .mobile-controls button {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    height: 40px;
+    padding: 0 15px; }
+    .mobile-controls button:hover {
+      cursor: pointer;
+      background: lightgrey;
+      color: #000; }
+  .mobile-controls .back-button {
+    display: none; }
 
 .mobile-menu {
-  background: #ffc;
+  background: lightgray;
   display: none;
   height: 100%;
   left: 0;
   position: absolute;
   width: 100%;
   z-index: 10; }
-
-ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  position: absolute;
-  transition: 0.25s; }
-
-li {
-  border-bottom: 1px solid black;
-  display: flex;
-  justify-content: space-between;
-  list-style: none; }
-
-li a {
-  color: #000;
-  flex: 3;
-  padding: 10px;
-  text-decoration: none; }
-
-li button {
-  background: none;
-  border: 0;
-  flex: 1;
-  text-align: right;
-  padding: 10px; }
-
-li:hover {
-  background: #2ecc71; }
-
-li:hover > a {
-  color: #fff; }
-
-li:hover > button {
-  color: #fff; }
-
-div > ul {
-  top: 0;
-  left: 0; }
-
-div > ul ul {
-  display: none;
-  top: 0;
-  left: 100%; }
-
-/* Content styles below here */
-section {
-  line-height: 1.5;
-  padding: 20px; }
-
-h1 {
-  font-size: 1.5rem; }
+  .mobile-menu ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    transition: 0.25s; }
+    .mobile-menu ul li {
+      border-bottom: 1px solid black;
+      list-style: none; }
+      .mobile-menu ul li:hover {
+        background: grey; }
+        .mobile-menu ul li:hover a {
+          color: lightgrey; }
+        .mobile-menu ul li:hover button {
+          color: grey; }
+      .mobile-menu ul li a {
+        color: #000;
+        flex: 3;
+        padding: 10px;
+        text-decoration: none; }
+      .mobile-menu ul li button {
+        background: none;
+        border: 0;
+        flex: 1;
+        text-align: right;
+        padding: 10px; }
 
 .sidebar {
   width: 12vw;

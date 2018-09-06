@@ -50,6 +50,26 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollTo(document.getElementById("contact"));
     });
 
+    anchors[5].addEventListener("click", () => {
+        scrollTo(document.getElementById("about"));
+    });
+
+    anchors[6].addEventListener("click", () => {
+        scrollTo(document.getElementById("services"));
+    });
+
+    anchors[7].addEventListener("click", () => {
+        scrollTo(document.getElementById("gallery"));
+    });
+
+    anchors[8].addEventListener("click", () => {
+        scrollTo(document.getElementById("maps"));
+    });
+
+    anchors[9].addEventListener("click", () => {
+        scrollTo(document.getElementById("contact"));
+    });
+
     //slider
     const prevDef = (e) => {
         e.preventDefault();
