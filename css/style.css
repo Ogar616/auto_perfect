@@ -448,7 +448,7 @@ p {
 h1 {
   background: rgba(17, 17, 17, 0.4);
   border-radius: 55px;
-  margin-right: 10px;
+  padding: 10px;
   box-shadow: 5px 5px 0 gray; }
 
 h2 {
@@ -473,4 +473,19 @@ iframe {
 .footer {
   background: rgba(17, 17, 17, 0.4);
   height: 50px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  padding: 1.5vh; }
+  .footer span {
+    font-size: 1vh; }
+  .footer .git {
+    float: right; }
+    .footer .git span {
+      position: relative;
+      bottom: 1vh; }
+    .footer .git a {
+      margin-left: 1vh;
+      cursor: pointer;
+      float: right; }
+    .footer .git img {
+      width: 2vh;
+      height: auto; }
