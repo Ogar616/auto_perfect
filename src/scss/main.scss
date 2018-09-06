@@ -11,12 +11,11 @@
   max-width: 100%;
 }
 
-@media (max-width: 1920px ){
-  #nav{
-    li{
-      font-size: 2vh;
-    }
-  }
+body{
+  font-weight: bolder;
+  font-size: 25px;
+  background-size: contain;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 899px){
@@ -33,13 +32,6 @@
     display: none;
     position: absolute;
   }
-}
-
-body{
-  font-weight: bolder;
-  font-size: 25px;
-  background-size: contain;
-  font-family: 'Roboto', sans-serif;
 }
 
 .container{
