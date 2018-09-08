@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bd6349c-16e4-44b6-8e70-931b2c886a02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js/out.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js/out.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../src/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../webpack.config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -159,14 +154,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1575" />
+          <entry key="html" value="1774" />
           <entry key="js" value="257" />
           <entry key="scss" value="502" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1575" />
+          <entry key="HTML" value="1774" />
           <entry key="JavaScript" value="257" />
           <entry key="SCSS" value="502" />
         </counts>
@@ -197,8 +192,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="301">
+              <caret line="122" column="121" selection-start-line="122" selection-start-column="121" selection-end-line="122" selection-end-column="121" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
@@ -367,12 +362,12 @@
       <workItem from="1535902885956" duration="10168000" />
       <workItem from="1536170683202" duration="2977000" />
       <workItem from="1536173750031" duration="20082000" />
-      <workItem from="1536419668201" duration="2747000" />
+      <workItem from="1536419668201" duration="3421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112418000" />
+    <option name="totallyTimeSpent" value="113092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -514,8 +509,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="301">
+          <caret line="122" column="121" selection-start-line="122" selection-start-column="121" selection-end-line="122" selection-end-column="121" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
