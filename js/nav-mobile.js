@@ -17,12 +17,21 @@ $(document).ready(function () {
 
         if (display === 'none') {
 
-            // Display the menu...
             $('.mobile-menu').css("display", "block");
+            $('.mobile-menu').css("top", "60px");
+            $('.mobile-menu').css("z-index", "100");
+            $('.mobile-controls').css('background-color', 'rgba(211,211,211,0.7)');
+            $('.mobile-controls').css('height', '60px');
+            $('.mobile-controls').css('position', 'fixed');
+            $('.mobile-controls').css('top', '1px');
+            $('.mobile-controls').css('width', '100%');
+            $('.mobile-controls').css("z-index", "100");
+            $('.menu-toggle').css('position', 'fixed');
+            $('.menu-toggle').css('left', '42%');
 
         } else {
 
-            // Hide the mobile menu...
+            $('.mobile-controls').css('background-color', '');
             $('.mobile-menu').css("display", "none");
 
             // and reset the mobile menu...
