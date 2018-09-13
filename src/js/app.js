@@ -1,7 +1,6 @@
-
 const toggleNav = document.getElementById("toggle");
 
-document.addEventListener("DOMContentLoaded", () => {
+(() => {
 
     const scrollTo = (element) => {
         window.scroll({
@@ -29,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ///////////////////////////////////////////////////////
     //scrolling page to sections
     const anchors = document.querySelectorAll("a");
+
+    console.log(anchors);
 
     anchors[0].addEventListener("click", () => {
            scrollTo(document.getElementById("about"));
