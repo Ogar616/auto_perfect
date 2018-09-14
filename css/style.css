@@ -101,7 +101,7 @@ mobile {
 @media (max-width: 899px) {
   #about {
     margin-top: 10px; }
-  .mobile-menu a {
+  .mobile-menu li a {
     font-size: 10vh; } }
 
 .sidebar {
