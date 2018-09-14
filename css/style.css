@@ -98,6 +98,10 @@ mobile {
         text-align: right;
         padding: 10px; }
 
+@media (max-width: 899px) {
+  #about {
+    margin-top: 10px; } }
+
 .sidebar {
   width: 12vw;
   height: auto;
@@ -326,9 +330,7 @@ body {
 
 @media (max-width: 899px) {
   #nav {
-    display: none; }
-  #about {
-    margin-top: 150px; } }
+    display: none; } }
 
 @media (min-width: 900px) {
   #nav-mobile {
