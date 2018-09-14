@@ -15,6 +15,10 @@ $(document).ready(function () {
         // Detect whether the mobile menu is being displayed...
         display = $('.mobile-menu').css("display");
 
+        $('.mobile-menu').find('a').on('click', function(){
+            $('.mobile-menu').css('display', 'none');
+        })
+        
         if (display === 'none') {
 
             $('.mobile-menu').css("display", "block");
@@ -26,13 +30,14 @@ $(document).ready(function () {
             $('.mobile-controls').css('top', '1px');
             $('.mobile-controls').css('width', '100%');
             $('.mobile-controls').css("z-index", "100");
+            $('#about').css("margin-top", "10px");
             $('.menu-toggle').css('position', 'fixed');
             $('.menu-toggle').css('left', '42%');
 
         } else {
 
-            $('.mobile-controls').css('background-color', '');
-            $('.mobile-menu').css("display", "none");
+            // $('.mobile-menu').css("display", "");
+           
 
             // and reset the mobile menu...
             $('.current-menu').removeClass('current-menu');

@@ -100,7 +100,8 @@ mobile {
 
 @media (max-width: 899px) {
   #about {
-    margin-top: 10px; }
+    margin-top: 10px;
+    position: relative; }
   .mobile-menu a {
     font-size: 10vh; } }
 

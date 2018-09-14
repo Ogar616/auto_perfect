@@ -1,5 +1,6 @@
 const toggleNav = document.getElementById("toggle");
 
+
 (() => {
 
     const scrollTo = (element) => {
@@ -9,6 +10,8 @@ const toggleNav = document.getElementById("toggle");
             top: element.offsetTop
         });
     };
+
+
 
     toggleNav.addEventListener("touchend", () => {
         if (toggleNav.classList.length === 1){
@@ -21,15 +24,12 @@ const toggleNav = document.getElementById("toggle");
 
     }, false);
 
-    /////////////////////////////////////////////////////
 
-
-
-    ///////////////////////////////////////////////////////
     //scrolling page to sections
     const anchors = document.querySelectorAll("a");
 
-    console.log(anchors);
+    console.log(toggleNav);
+    console.log("daaaaaaaaaaafdfdfd");
 
     anchors[0].addEventListener("click", () => {
            scrollTo(document.getElementById("about"));
