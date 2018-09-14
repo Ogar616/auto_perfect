@@ -1,17 +1,15 @@
 const toggleNav = document.getElementById("toggle");
 
+const scrollTo = (element) => {
+    window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top: element.offsetTop
+    });
+};
+
 
 (() => {
-
-    const scrollTo = (element) => {
-        window.scroll({
-            behavior: 'smooth',
-            left: 0,
-            top: element.offsetTop
-        });
-    };
-
-
 
     toggleNav.addEventListener("touchend", () => {
         if (toggleNav.classList.length === 1){
@@ -29,7 +27,7 @@ const toggleNav = document.getElementById("toggle");
     const anchors = document.querySelectorAll("a");
 
     console.log(toggleNav);
-    console.log("daaaaaaaaaaafdfdfd");
+    console.log("WORKING MOTHERFUCKER");
 
     anchors[0].addEventListener("click", () => {
            scrollTo(document.getElementById("about"));
@@ -88,8 +86,6 @@ const toggleNav = document.getElementById("toggle");
             a[scaleI].addEventListener("click", prevDef);
         }
     }
-
-
 
     const forScale = (coverflowPos) => {
         for (scaleI = 0; scaleI < a.length; scaleI++) {
