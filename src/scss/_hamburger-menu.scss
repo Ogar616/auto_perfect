@@ -1,5 +1,4 @@
 mobile {
-  border: 2px solid black;
   border-radius: 8px;
   height: auto;
   margin: 10vh auto;
@@ -45,7 +44,6 @@ mobile {
     position: absolute;
     transition: 0.25s;
     li {
-      border-bottom: 1px solid black;
       list-style: none;
       &:hover{
         background: grey;
@@ -61,10 +59,10 @@ mobile {
         flex: 3;
         padding: 10px;
         text-decoration: none;
+        font-size: 11.8vh;
       }
       button {
         background: none;
-        border: 0;
         text-align: right;
         padding: 10px;
       }

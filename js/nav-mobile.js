@@ -18,7 +18,7 @@ $(document).ready(function () {
         if (display === 'none') {
 
             $('.mobile-menu').css("display", "block");
-            $('.mobile-menu').css("top", "60px");
+            $('.mobile-menu').css("top", "61px");
             $('.mobile-menu').css("z-index", "100");
             $('.mobile-controls').css('background-color', 'rgba(211,211,211,0.7)');
             $('.mobile-controls').css('height', '60px');
