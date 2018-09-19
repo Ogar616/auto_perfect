@@ -120,10 +120,6 @@ mobile {
   .sidebar p {
     font-size: 2vh; }
 
-@media (max-width: 1200px) {
-  .sidebar {
-    display: none; } }
-
 .slides {
   padding: 0;
   width: 609px;
@@ -305,6 +301,15 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   position: absolute;
   top: -46px; }
 
+@media (max-width: 899px) {
+  #nav {
+    display: none; } }
+
+@media (min-width: 900px) {
+  #nav-mobile {
+    display: none;
+    position: absolute; } }
+
 @media all and (max-width: 640px) {
   .form-container {
     position: static;
@@ -319,6 +324,22 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     font-size: 24px;
     top: -26px; } }
 
+@media (max-width: 1200px) {
+  .sidebar {
+    display: none; } }
+
+@media (max-width: orientation portrait) {
+  h2 {
+    font-size: 2px !important; } }
+
+.container {
+  border: 1px solid red; }
+  .container::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: red; }
+
 * {
   box-sizing: border-box;
   margin: 0 auto;
@@ -330,15 +351,6 @@ body {
   background-image: url("/img/brakes.jpg");
   background-size: contain;
   font-family: 'Roboto', sans-serif; }
-
-@media (max-width: 899px) {
-  #nav {
-    display: none; } }
-
-@media (min-width: 900px) {
-  #nav-mobile {
-    display: none;
-    position: absolute; } }
 
 .container {
   text-align: center; }

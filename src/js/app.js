@@ -176,5 +176,6 @@ const scrollTo = (element) => {
     };
 
 
+
     setupCoverflow();
 });

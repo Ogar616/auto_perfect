@@ -1,0 +1,51 @@
+@media (max-width: 899px){
+    #nav{
+      display: none;
+    }
+}
+  
+@media (min-width: 900px){
+    #nav-mobile{
+    display: none;
+    position: absolute;
+    }
+}
+
+@media  all and (max-width: 640px) {
+    .form-container {
+    position: static;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    }
+    .form-container h3 {
+      font-size: 24px;
+      top: -26px;
+    }
+}
+
+@media (max-width: 1200px){
+    .sidebar{
+      display: none;
+    }
+}
+
+@media (max-width: 640px and orientation portrait){
+    h2{
+        font-size: 2px !important;
+    }
+}
+
+.container{
+    border: 1px solid red;
+    &::after{
+        content: "";
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+}
