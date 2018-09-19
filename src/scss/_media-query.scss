@@ -2,12 +2,24 @@
     #nav{
       display: none;
     }
+    .git{
+        span{
+            position: relative;
+            bottom: 35%;
+        }
+    }
 }
   
 @media (min-width: 900px){
     #nav-mobile{
     display: none;
     position: absolute;
+    }
+    .git{
+        span{
+            position: relative;
+            bottom: 25%;
+            }
     }
 }
 
@@ -28,24 +40,26 @@
     }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1400px){
     .sidebar{
       display: none;
     }
 }
 
-@media (max-width: 640px and orientation portrait){
-    h2{
-        font-size: 2px !important;
+@media (min-width: 1400px){
+    .imageDescription{
+        padding-top: 7%;
     }
 }
 
-.container{
-    border: 1px solid red;
-    &::after{
-        content: "";
-        width: 100px;
-        height: 100px;
-        background-color: red;
+@media (max-width: 640px){
+    h3{
+        font-size: 22px !important;
+        font-weight: 900;
+    }
+    p{
+        font-size: 15px;
+        font-weight: 400;
+
     }
 }

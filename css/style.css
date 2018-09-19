@@ -303,12 +303,18 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 @media (max-width: 899px) {
   #nav {
-    display: none; } }
+    display: none; }
+  .git span {
+    position: relative;
+    bottom: 35%; } }
 
 @media (min-width: 900px) {
   #nav-mobile {
     display: none;
-    position: absolute; } }
+    position: absolute; }
+  .git span {
+    position: relative;
+    bottom: 25%; } }
 
 @media all and (max-width: 640px) {
   .form-container {
@@ -324,21 +330,21 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     font-size: 24px;
     top: -26px; } }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .sidebar {
     display: none; } }
 
-@media (max-width: orientation portrait) {
-  h2 {
-    font-size: 2px !important; } }
+@media (min-width: 1400px) {
+  .imageDescription {
+    padding-top: 7%; } }
 
-.container {
-  border: 1px solid red; }
-  .container::after {
-    content: "";
-    width: 100px;
-    height: 100px;
-    background-color: red; }
+@media (max-width: 640px) {
+  h3 {
+    font-size: 22px !important;
+    font-weight: 900; }
+  p {
+    font-size: 15px;
+    font-weight: 400; } }
 
 * {
   box-sizing: border-box;
@@ -355,15 +361,19 @@ body {
 .container {
   text-align: center; }
 
+#about p {
+  margin-top: 10%; }
+
 .imageDescription {
   font-size: 2vh; }
+  .imageDescription p {
+    margin-left: 10%;
+    font-size: 18px;
+    font-weight: 500; }
 
 img {
   margin: 2vh;
   border-radius: 2vh; }
-
-p {
-  margin-top: 5%; }
 
 h1 {
   background: rgba(17, 17, 17, 0.4);
@@ -371,9 +381,10 @@ h1 {
   padding: 10px;
   box-shadow: 5px 5px 0 gray; }
 
-h2 {
+h3 {
   font-weight: bolder;
-  margin-top: 2vh; }
+  margin-top: 2vh;
+  margin-left: 10% !important; }
 
 .map {
   width: 100%; }
@@ -383,7 +394,8 @@ h2 {
 
 iframe {
   height: 30vh;
-  border: 0; }
+  border: 0;
+  margin: 2vh; }
 
 #contact {
   position: relative;
@@ -393,19 +405,17 @@ iframe {
 .footer {
   background: rgba(17, 17, 17, 0.4);
   height: 50px;
-  margin-top: 30px;
-  padding: 1.5vh; }
+  padding: 2vh; }
+  .footer .container {
+    height: 100%; }
   .footer span {
     font-size: 1vh; }
   .footer .git {
     float: right; }
-    .footer .git span {
-      position: relative;
-      bottom: 1vh; }
     .footer .git a {
-      margin-left: 1vh;
       cursor: pointer;
-      float: right; }
+      float: right;
+      position: relative;
+      bottom: 40%; }
     .footer .git img {
-      width: 2vh;
-      height: auto; }
+      width: 2vw; }
