@@ -81,25 +81,25 @@ iframe{
 .footer{
   background: rgba(17, 17, 17, 0.4);
   height: 50px;
-  .container{
-    height: 100%;
-  }
-  padding: 2vh;
+  padding: 1.5vh;
   span{
     font-size: 1vh;
- 
+    &:first-of-type{
+      float: left;
+    }
+    &:last-of-type{
+      float: right;
+      margin-right: 10px;
+    }
   }
-  .git{
-    float: right;
     a{
       cursor: pointer;
       float: right;
-      position: relative;
-      bottom: 40%;
-  
+      margin-left: 0;
     }
     img{
       width: 2vw;
+      margin: 0;
     }
-  }
+
 }

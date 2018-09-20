@@ -410,17 +410,18 @@ iframe {
 .footer {
   background: rgba(17, 17, 17, 0.4);
   height: 50px;
-  padding: 2vh; }
-  .footer .container {
-    height: 100%; }
+  padding: 1.5vh; }
   .footer span {
     font-size: 1vh; }
-  .footer .git {
-    float: right; }
-    .footer .git a {
-      cursor: pointer;
+    .footer span:first-of-type {
+      float: left; }
+    .footer span:last-of-type {
       float: right;
-      position: relative;
-      bottom: 40%; }
-    .footer .git img {
-      width: 2vw; }
+      margin-right: 10px; }
+  .footer a {
+    cursor: pointer;
+    float: right;
+    margin-left: 0; }
+  .footer img {
+    width: 2vw;
+    margin: 0; }
