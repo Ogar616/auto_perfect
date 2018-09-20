@@ -334,10 +334,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   .sidebar {
     display: none; } }
 
-@media (min-width: 1400px) {
-  .imageDescription {
-    padding-top: 7%; } }
-
 @media (max-width: 640px) {
   h3 {
     font-size: 22px !important;
@@ -352,11 +348,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   max-width: 100%; }
 
 body {
-  font-weight: bolder;
-  font-size: 25px;
-  background-image: url("/img/brakes.jpg");
-  background-size: contain;
-  font-family: 'Roboto', sans-serif; }
+  font-size: 25px; }
 
 .container {
   text-align: center; }
@@ -365,11 +357,13 @@ body {
   margin-top: 10%; }
 
 .imageDescription {
-  font-size: 2vh; }
+  padding-top: 2vw !important; }
   .imageDescription p {
     margin-left: 10%;
-    font-size: 18px;
     font-weight: 500; }
+
+.imageDescription:last-of-type {
+  padding: 0 !important; }
 
 img {
   margin: 2vh;
@@ -382,9 +376,13 @@ h1 {
   box-shadow: 5px 5px 0 gray; }
 
 h3 {
-  font-weight: bolder;
+  font-size: 2vw !important;
+  font-weight: 900 !important;
   margin-top: 2vh;
   margin-left: 10% !important; }
+
+#services p {
+  font-size: 1.5vw; }
 
 .map {
   width: 100%; }

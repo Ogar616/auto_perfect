@@ -13,11 +13,7 @@
 }
 
 body{
-  font-weight: bolder;
   font-size: 25px;
-  background-image: url("/img/brakes.jpg");
-  background-size: contain;
-  font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -31,12 +27,15 @@ body{
 }
 
 .imageDescription{
-  font-size: 2vh;
+  padding-top: 2vw !important;
   p{
     margin-left: 10%;
-    font-size: 18px;
     font-weight: 500;
   }
+}
+
+.imageDescription:last-of-type{
+  padding: 0 !important;
 }
 
 img{
@@ -53,9 +52,15 @@ h1{
 }
 
 h3{
-  font-weight: bolder;
+  font-size: 2vw !important;
+  font-weight: 900 !important;
   margin-top: 2vh;
   margin-left: 10% !important;
+}
+#services{
+  p{
+    font-size: 1.5vw;
+  }
 }
 
 .map{
