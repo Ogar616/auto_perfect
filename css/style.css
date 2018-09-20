@@ -312,6 +312,12 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     position: relative;
     bottom: 35%; } }
 
+@media (min-width: 766px) and (max-width: 899px) {
+  #services .imageDescription h3 {
+    font-size: 2.5vw !important; }
+  #services .imageDescription p {
+    font-size: 1.5vw !important; } }
+
 @media (min-width: 900px) {
   #nav-mobile {
     display: none;
@@ -351,7 +357,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   margin: 0 auto;
   max-width: 100%; }
 
-body {
+#nav {
   font-size: 25px; }
 
 .container {
@@ -360,22 +366,13 @@ body {
 #about p {
   margin-top: 10%; }
 
-.imageDescription {
-  padding-top: 2vw !important; }
-  .imageDescription p {
-    margin-left: 10%;
-    font-weight: 500; }
-
-.imageDescription:last-of-type {
-  padding: 0 !important; }
-
 img {
   margin: 2vh;
   border-radius: 2vh; }
 
 h1 {
   background: rgba(17, 17, 17, 0.4);
-  border-radius: 35px;
+  border-radius: 55px;
   padding: 10px;
   box-shadow: 5px 5px 0 gray; }
 
@@ -385,13 +382,16 @@ h3 {
   margin-top: 2vh;
   margin-left: 10% !important; }
 
+#services .imageDescription {
+  padding-top: 2vw !important; }
+  #services .imageDescription p {
+    margin-left: 10%;
+    font-weight: 500; }
+
 #services p {
   font-size: 1.5vw; }
 
-.map {
-  width: 100%; }
-
-.street {
+.map, .street {
   width: 100%; }
 
 iframe {

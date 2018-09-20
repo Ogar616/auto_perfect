@@ -12,7 +12,7 @@
   max-width: 100%;
 }
 
-body{
+#nav{
   font-size: 25px;
 }
 
@@ -26,18 +26,6 @@ body{
   }
 }
 
-.imageDescription{
-  padding-top: 2vw !important;
-  p{
-    margin-left: 10%;
-    font-weight: 500;
-  }
-}
-
-.imageDescription:last-of-type{
-  padding: 0 !important;
-}
-
 img{
   margin: 2vh;
   border-radius: 2vh;
@@ -45,7 +33,7 @@ img{
 
 h1{
   background: rgba(17, 17, 17, 0.4);
-  border-radius: 35px;
+  border-radius: 55px;
   padding: 10px;
   box-shadow: 5px 5px 0 gray;
 
@@ -56,18 +44,23 @@ h3{
   font-weight: 900 !important;
   margin-top: 2vh;
   margin-left: 10% !important;
+
 }
+
 #services{
+  .imageDescription{
+    padding-top: 2vw !important;
+    p{
+      margin-left: 10%;
+      font-weight: 500;
+    }
+  }
   p{
     font-size: 1.5vw;
   }
 }
 
-.map{
-  width: 100%;
-}
-
-.street{
+.map, .street{
   width: 100%;
 }
 
