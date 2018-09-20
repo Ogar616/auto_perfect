@@ -304,6 +304,10 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 @media (max-width: 899px) {
   #nav {
     display: none; }
+  #services .imageDescription h3 {
+    font-size: 5vw !important; }
+  #services .imageDescription p {
+    font-size: 3vw !important; }
   .git span {
     position: relative;
     bottom: 35%; } }

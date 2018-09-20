@@ -2,6 +2,16 @@
     #nav{
       display: none;
     }
+    #services{
+        .imageDescription{
+            h3{
+                font-size: 5vw !important;
+            }
+            p{
+                font-size: 3vw !important;                }
+            }
+        }
+
     .git{
         span{
             position: relative;
@@ -58,5 +68,4 @@
 
     }
 }
-
 
