@@ -28,6 +28,7 @@ $(document).ready(function () {
             $('.current-menu').removeClass('current-menu');
             $('.top-menu').css("left", "0");
             $('.back-button').css("display", "none");
+            $('.mobile-menu').css("display", "none");
         }
     });
 });

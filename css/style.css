@@ -382,6 +382,9 @@ h3 {
   margin-top: 2vh;
   margin-left: 10% !important; }
 
+p {
+  font-weight: 500; }
+
 #services .imageDescription {
   padding-top: 2vw !important; }
   #services .imageDescription p {
