@@ -322,6 +322,8 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   #nav-mobile {
     display: none;
     position: absolute; }
+  #about p {
+    font-size: 1.5vw; }
   .git span {
     position: relative;
     bottom: 25%; } }
@@ -386,7 +388,7 @@ p {
   font-weight: 500; }
 
 #services .imageDescription {
-  padding-top: 2vw !important; }
+  padding-top: 1vw !important; }
   #services .imageDescription p {
     margin-left: 10%;
     font-weight: 500; }
@@ -419,6 +421,8 @@ iframe {
       float: right;
       margin-right: 10px; }
   .footer a {
+    position: relative;
+    bottom: 0.5vw;
     cursor: pointer;
     float: right;
     margin-left: 0; }

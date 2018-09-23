@@ -8,8 +8,9 @@
                 font-size: 5vw !important;
             }
             p{
-                font-size: 3vw !important;                }
+                font-size: 3vw !important;
             }
+        }
     }
 
     .git{
@@ -31,11 +32,16 @@
             }
     }
 }
-  
+
 @media (min-width: 900px){
     #nav-mobile{
     display: none;
     position: absolute;
+    }
+    #about{
+        p{
+            font-size: 1.5vw;
+        }
     }
     .git{
         span{

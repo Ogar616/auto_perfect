@@ -10,11 +10,7 @@ const scrollTo = (element) => {
 (() => {
 
 //scrolling page to sections
-const anchors = document.querySelectorAll("a");
-
-let attr = anchors[0].getAttribute("href");
-    console.log(attr);
-    console.log(typeof(attr));
+    const anchors = document.querySelectorAll("a");
 
     anchors.forEach(a => {
     a.addEventListener("click", () => {

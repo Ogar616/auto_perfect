@@ -51,7 +51,7 @@ p{
 
 #services{
   .imageDescription{
-    padding-top: 2vw !important;
+    padding-top: 1vw !important;
     p{
       margin-left: 10%;
       font-weight: 500;
@@ -93,6 +93,8 @@ iframe{
     }
   }
     a{
+      position: relative;
+      bottom: 0.5vw;
       cursor: pointer;
       float: right;
       margin-left: 0;
