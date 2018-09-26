@@ -340,19 +340,17 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     margin-bottom: 20px; }
   .form-container h3 {
     font-size: 24px;
-    top: -26px; } }
-
-@media (max-width: 1400px) {
-  .sidebar {
-    display: none; } }
-
-@media (max-width: 640px) {
+    top: -26px; }
   h3 {
     font-size: 22px !important;
     font-weight: 900; }
   p {
     font-size: 15px;
     font-weight: 400; } }
+
+@media (max-width: 1400px) {
+  .sidebar {
+    display: none; } }
 
 * {
   box-sizing: border-box;

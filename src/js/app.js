@@ -1,4 +1,4 @@
-const scrollTo = (element) => {
+const scrollTo = element => {
     window.scroll({
         behavior: 'smooth',
         left: 0,

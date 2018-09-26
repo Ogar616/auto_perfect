@@ -66,16 +66,6 @@
       font-size: 24px;
       top: -26px;
     }
-}
-
-@media (max-width: 1400px){
-    .sidebar{
-      display: none;
-    }
-}
-
-
-@media (max-width: 640px){
     h3{
         font-size: 22px !important;
         font-weight: 900;
@@ -86,4 +76,11 @@
 
     }
 }
+
+@media (max-width: 1400px){
+    .sidebar{
+      display: none;
+    }
+}
+
 
